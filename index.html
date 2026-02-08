@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Dentaire Dr Chtouki Sabrine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --font-main: 'Outfit', sans-serif;
+      --font-serif: 'DM Serif Display', serif;
+      --font-arabic: 'Noto Sans Arabic', sans-serif;
+    }
+
+    * {
+      font-family: var(--font-main);
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    [dir="rtl"] * {
+      font-family: var(--font-arabic) !important;
+    }
+
+    .font-serif {
+      font-family: var(--font-serif);
+    }
+
+    [dir="rtl"] .font-serif {
+      font-family: var(--font-arabic) !important;
+      font-weight: 700;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    /* DEFINITIVE FIX FOR THE 'e' CLIPPING IN SABRINE (BOLD VERSION) */
+    .gradient-text {
+      background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      
+      /* Increased padding to 0.4em to safely house bold-italic characters */
+      padding-right: 0.4em; 
+      margin-right: -0.4em;
+      
+      overflow: visible !important;
+      line-height: 1.2;
+      vertical-align: middle;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    
+    body.menu-open {
+      overflow: hidden;
+    }
+    
+    h1, h2, h3 {
+      line-height: 1.1 !important;
+      letter-spacing: -0.01em;
+    }
+    
+    [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+      line-height: 1.6 !important;
+      letter-spacing: normal;
+    }
+
+    @supports (-webkit-background-clip: text) {
+      .gradient-text {
+        white-space: nowrap;
+      }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#fafbfd] text-slate-900 overflow-x-hidden">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
